@@ -162,6 +162,10 @@ app.delete('/transaction/:id', (request, response) => {
     })
 })
 
+app.get("/", (request, response) => {
+    response.send("Welcome to my 9th week assignment!")
+});
+
 app.listen(3000, () => {
     console.log("running in 3000")
 })
