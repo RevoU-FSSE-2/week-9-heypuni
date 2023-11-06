@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "0008aaf1-dc8c-439a-83b4-ffc7db4ca0fe",
+		"name": "MBanking App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4418335"
+	},
+	"item": [
+		{
+			"name": "/user/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mbanking-app-cecw.vercel.app/user/1",
+					"protocol": "https",
+					"host": [
+						"mbanking-app-cecw",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"expense\",\n    \"amount\": \"50000\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mbanking-app-cecw.vercel.app/transaction",
+					"protocol": "https",
+					"host": [
+						"mbanking-app-cecw",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/transaction/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"income\",\n    \"amount\": \"50000\",\n    \"user_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mbanking-app-cecw.vercel.app/transaction/3",
+					"protocol": "https",
+					"host": [
+						"mbanking-app-cecw",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/transaction/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mbanking-app-cecw.vercel.app/transaction/3",
+					"protocol": "https",
+					"host": [
+						"mbanking-app-cecw",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

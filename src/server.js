@@ -7,8 +7,8 @@ const port = process.env.PORT || 3000; // Port yang digunakan oleh server (bisa 
 app.use(express.json());
 
 // Import berkas rute-rute yang telah Anda definisikan
-const userRoutes = require('./src/routes/user'); // Sesuaikan dengan path ke berkas user.js
-const transactionRoutes = require('./src/routes/transaction'); // Sesuaikan dengan path ke berkas transaction.js
+const userRoutes = require('./routes/user'); // Sesuaikan dengan path ke berkas user.js
+const transactionRoutes = require('./routes/transaction'); // Sesuaikan dengan path ke berkas transaction.js
 
 // Gunakan rute-rute yang telah diimpor
 app.use('/user', userRoutes);
