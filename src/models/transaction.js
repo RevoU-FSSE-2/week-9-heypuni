@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
 
 const Transaction = {};
 
-// Fungsi untuk menambahkan transaksi baru (income atau expense)
+
 Transaction.addTransaction = (type, amount, user_id, callback) => {
   const sql = 'INSERT INTO transaction (type, amount, user_id) VALUES (?, ?, ?)';
   const values = [type, amount, user_id];
@@ -23,7 +23,7 @@ Transaction.addTransaction = (type, amount, user_id, callback) => {
   });
 };
 
-// Fungsi untuk mengubah transaksi berdasarkan ID
+
 Transaction.updateTransaction = (id, type, amount, user_id, callback) => {
   const sql = 'UPDATE transaction SET type = ?, amount = ?, user_id = ? WHERE id = ?';
   const values = [type, amount, user_id, id];
@@ -36,7 +36,7 @@ Transaction.updateTransaction = (id, type, amount, user_id, callback) => {
   });
 };
 
-// Fungsi untuk menghapus transaksi berdasarkan ID
+
 Transaction.deleteTransaction = (id, callback) => {
   const sql = 'DELETE FROM transaction WHERE id = ?';
   const values = [id];

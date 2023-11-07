@@ -5,4 +5,4 @@
 A little bit late (ok, a lot late) but here it is!
 This week, I created 2 tables in mysql, one for the users and one for the posts. Connected the two fo them with a foreign key and created a simple mbanking app to display the user's total balance and total expenses.    
 
-Here's the [link]() to the project! 
+Here's the [link](https://mbanking-app-cecw.vercel.app) to the project! 
